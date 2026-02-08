@@ -1,0 +1,5 @@
+.codex/history.jsonl
+.codex/log/
+.codex/models_cache.json
+.codex/sessions/
+.codex/tmp/
