@@ -1,50 +1,89 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: N/A (template) -> 1.0.0
+- Modified principles: N/A (initial adoption)
+- Added sections: Core Principles (instantiated), Scope & Sources,
+  Workflow & Quality Gates, Governance (instantiated)
+- Removed sections: None
+- Templates requiring updates:
+  - UPDATED .specify/templates/plan-template.md
+  - UPDATED .specify/templates/spec-template.md
+  - UPDATED .specify/templates/tasks-template.md
+  - PENDING .specify/templates/commands/*.md (directory not found)
+  - PENDING Runtime guidance docs (none found)
+- Follow-up TODOs:
+  - None
+-->
+# CMS Specification Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Source-of-Truth Requirements
+- Requirements, flows, actors, permissions, and data fields MUST come from
+  `cms_user_stories.md` and `Use Cases_Scenarios_ATs.md` or be strictly implied.
+- If a detail is not supported by those documents, mark it
+  `NEEDS CLARIFICATION` and ask a targeted question.
+Rationale: prevents requirements drift and keeps artifacts auditable.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Planning-Only Output
+- Work products are limited to constitution, clarify Q/A, spec, plan, tasks, and
+  checklist/analyze artifacts. Do not implement unless explicitly requested.
+- Any illustrative code or pseudo-code MUST follow `coding_standards.md`.
+Rationale: keeps scope aligned to planning and validation.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Clarify Ambiguity Before Proceeding
+- Ambiguities MUST be surfaced as explicit questions and answered before
+  advancing to the next pipeline step.
+- When an answer is pending, record `TODO(<FIELD>): <reason>` in place.
+Rationale: avoids hidden assumptions and rework later in the pipeline.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Traceability & Coverage
+- The spec MUST cover all major capabilities in the source documents.
+- Every requirement and acceptance test MUST trace back to user stories and/or
+  use cases.
+- Terminology MUST be consistent across all artifacts.
+Rationale: ensures completeness and prevents conflicting interpretations.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Testable Quality Gates
+- Acceptance tests MUST include success paths and key failures: validation,
+  authorization, and system-failure handling where documented.
+- Tests MUST be deterministic and avoid external dependencies unless explicitly
+  planned.
+- Each pipeline step MUST include a brief validation pass against the
+  source-of-truth documents; if drift is found, revise the earlier artifact.
+Rationale: guarantees verifiable outcomes and stable planning inputs.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Scope & Sources
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Authoritative requirements sources are `cms_user_stories.md` and
+  `Use Cases_Scenarios_ATs.md`.
+- `coding_standards.md` is binding for any code snippets or implementation
+  guidance included in planning artifacts.
+- Do not invent new requirements, flows, actors, permissions, or data fields.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Workflow & Quality Gates
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Execute the pipeline in order: Constitution -> Clarify -> Specify -> Plan ->
+  Tasks -> Checklist + Analyze.
+- After each step, perform a short validation pass against the authoritative
+  sources. If drift is found, update the earlier artifact rather than patching
+  later steps.
+- The plan MUST describe architecture, data model, interfaces/contracts, and
+  testing strategy. Tasks MUST be ordered, chunked, and test-driven.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- The constitution supersedes other guidance. Conflicts must be resolved by
+  amending this document.
+- Amendment procedure:
+  1. Propose change with rationale and impact.
+  2. Update this constitution and all dependent templates.
+  3. Record changes in the Sync Impact Report.
+- Versioning follows semantic versioning:
+  - MAJOR: backward-incompatible governance/principle removal or redefinition.
+  - MINOR: new principle/section or materially expanded guidance.
+  - PATCH: clarifications or non-semantic refinements.
+- Compliance review: every artifact must include a constitution check and
+  demonstrate traceability to source documents.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-02-08 | **Last Amended**: 2026-02-08

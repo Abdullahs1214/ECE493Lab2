@@ -4,6 +4,10 @@
 **Created**: [DATE]  
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
+**Authoritative Sources**: `cms_user_stories.md`, `Use Cases_Scenarios_ATs.md`  
+**Terminology**: Use source terms verbatim; do not invent actors, permissions,
+or fields.  
+**Ambiguities**: Mark as `NEEDS CLARIFICATION` and ask targeted questions.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -33,6 +37,9 @@
 1. **Given** [initial state], **When** [action], **Then** [expected outcome]
 2. **Given** [initial state], **When** [action], **Then** [expected outcome]
 
+Include success and key failure paths (validation, authorization, and
+system-failure handling where documented).
+
 ---
 
 ### User Story 2 - [Brief Title] (Priority: P2)
@@ -46,6 +53,9 @@
 **Acceptance Scenarios**:
 
 1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+
+Include success and key failure paths (validation, authorization, and
+system-failure handling where documented).
 
 ---
 
@@ -61,6 +71,9 @@
 
 1. **Given** [initial state], **When** [action], **Then** [expected outcome]
 
+Include success and key failure paths (validation, authorization, and
+system-failure handling where documented).
+
 ---
 
 [Add more user stories as needed, each with an assigned priority]
@@ -73,7 +86,9 @@
 -->
 
 - What happens when [boundary condition]?
-- How does system handle [error scenario]?
+- How does system handle [validation error]?
+- How does system handle [authorization failure]?
+- How does system handle [system failure/timeout]?
 
 ## Requirements *(mandatory)*
 

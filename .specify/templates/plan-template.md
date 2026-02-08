@@ -3,7 +3,8 @@
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
+**Note**: This template is filled in by the `/speckit.plan` command. Follow the
+project constitution workflow and gates when completing this file.
 
 ## Summary
 
@@ -26,12 +27,20 @@
 **Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
 **Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Code Style**: `coding_standards.md` (binding for any code guidance)
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] Requirements and behaviors trace to `cms_user_stories.md` and
+      `Use Cases_Scenarios_ATs.md` with no invented scope.
+- [ ] Clarifications are recorded for every ambiguity.
+- [ ] Spec covers all major capabilities and user-visible behaviors.
+- [ ] Plan includes architecture, data model, interfaces/contracts, and testing
+      strategy.
+- [ ] Tasks will be test-driven and include validation, authorization, and
+      failure-handling tests where documented.
 
 ## Project Structure
 
