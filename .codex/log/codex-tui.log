@@ -1,0 +1,19 @@
+2026-02-07T17:39:28.051291Z  INFO codex_core::auth: Reloading auth
+2026-02-07T17:39:28.052862Z  INFO codex_core::auth: Reloaded auth, changed: true
+2026-02-07T17:39:45.793099Z  INFO codex_core::skills::manager: skills cache cleared (1 entries)
+2026-02-07T17:39:46.793686Z  INFO codex_core::skills::manager: skills cache cleared (0 entries)
+2026-02-07T17:39:46.932450Z  INFO session_init: codex_core::codex: new
+2026-02-07T17:39:46.966521Z  INFO session_init: codex_core::codex: close time.busy=1.82ms time.idle=32.3ms
+2026-02-07T17:39:46.966538Z  INFO session_loop{thread_id=019c3930-3674-7b71-b14c-1802d7d81bf6}: codex_core::codex: new
+2026-02-07T17:41:29.055900Z  INFO session_loop{thread_id=019c3930-3674-7b71-b14c-1802d7d81bf6}: codex_core::codex::handlers: Shutting down Codex instance
+2026-02-07T17:41:29.056320Z  INFO session_loop{thread_id=019c3930-3674-7b71-b14c-1802d7d81bf6}: codex_core::codex: close time.busy=15.8ms time.idle=102s
+2026-02-07T17:49:53.673263Z  INFO session_init: codex_core::codex: new
+2026-02-07T17:49:53.709580Z  INFO session_init: codex_core::codex: close time.busy=7.34ms time.idle=29.0ms
+2026-02-07T17:49:53.709620Z  INFO session_loop{thread_id=019c3939-788a-74a2-aae3-42e9533badac}: codex_core::codex: new
+2026-02-07T17:50:06.521090Z  INFO session_loop{thread_id=019c3939-788a-74a2-aae3-42e9533badac}: codex_core::codex::handlers: Shutting down Codex instance
+2026-02-07T17:50:06.521861Z  INFO session_loop{thread_id=019c3939-788a-74a2-aae3-42e9533badac}: codex_core::codex: close time.busy=17.1ms time.idle=12.8s
+2026-02-07T17:50:43.855057Z  INFO session_init: codex_core::codex: new
+2026-02-07T17:50:43.891071Z  INFO session_init: codex_core::codex: close time.busy=7.39ms time.idle=28.6ms
+2026-02-07T17:50:43.891289Z  INFO session_loop{thread_id=019c393a-3c8f-76a1-91ce-434bd10a9124}: codex_core::codex: new
+2026-02-07T17:50:52.166416Z  INFO session_loop{thread_id=019c393a-3c8f-76a1-91ce-434bd10a9124}: codex_core::codex::handlers: Shutting down Codex instance
+2026-02-07T17:50:52.167212Z  INFO session_loop{thread_id=019c393a-3c8f-76a1-91ce-434bd10a9124}: codex_core::codex: close time.busy=18.2ms time.idle=8.26s
