@@ -41,3 +41,9 @@ For pull requests, include:
 ## Agent-Specific Instructions
 
 If you use automation under `.specify/`, keep output aligned with the existing Markdown structure and identifiers, and avoid introducing new formatting conventions unless agreed upon.
+
+## Active Technologies
+- N/A (documentation-only) (001-generate-single-combined)
+
+## Recent Changes
+- 001-generate-single-combined: Added N/A (documentation-only)
