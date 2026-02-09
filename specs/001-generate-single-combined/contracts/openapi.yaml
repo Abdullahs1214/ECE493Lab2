@@ -1,0 +1,133 @@
+openapi: 3.0.3
+info:
+  title: CMS Operations (Minimal)
+  version: 0.1.0
+  description: Minimal REST endpoints mapped to UC-01..UC-21. Schemas are omitted
+    to avoid inventing fields.
+paths:
+  /api/register:
+    post:
+      summary: Register user account
+      description: UC-01, UC-02
+      responses:
+        '200':
+          description: Registration result
+  /api/login:
+    post:
+      summary: Log in user
+      description: UC-03
+      responses:
+        '200':
+          description: Login result
+  /api/password:
+    post:
+      summary: Change password
+      description: UC-04
+      responses:
+        '200':
+          description: Password change result
+  /api/submissions:
+    post:
+      summary: Submit paper
+      description: UC-05
+      responses:
+        '200':
+          description: Submission result
+  /api/submissions/{id}/draft:
+    post:
+      summary: Save submission draft
+      description: UC-06
+      responses:
+        '200':
+          description: Draft save result
+  /api/submissions/validate:
+    post:
+      summary: Validate submission data
+      description: UC-07
+      responses:
+        '200':
+          description: Validation result
+  /api/reviewer-assignments:
+    post:
+      summary: Assign reviewers
+      description: UC-08, UC-09
+      responses:
+        '200':
+          description: Assignment result
+  /api/reviewers/notify:
+    post:
+      summary: Notify reviewers
+      description: UC-10
+      responses:
+        '200':
+          description: Notification result
+  /api/reviewer-invitations/{id}/response:
+    post:
+      summary: Respond to review invitation
+      description: UC-11
+      responses:
+        '200':
+          description: Invitation response result
+  /api/reviews:
+    post:
+      summary: Submit paper review
+      description: UC-12, UC-13
+      responses:
+        '200':
+          description: Review submission result
+  /api/decisions:
+    post:
+      summary: Make accept/reject decision
+      description: UC-14
+      responses:
+        '200':
+          description: Decision result
+  /api/author-notifications:
+    post:
+      summary: Notify authors
+      description: UC-15
+      responses:
+        '200':
+          description: Notification result
+  /api/schedule/generate:
+    post:
+      summary: Generate conference schedule
+      description: UC-16
+      responses:
+        '200':
+          description: Schedule generation result
+  /api/schedule/modify:
+    post:
+      summary: Modify conference schedule
+      description: UC-17
+      responses:
+        '200':
+          description: Schedule modification result
+  /api/schedule/publish:
+    post:
+      summary: Publish final schedule
+      description: UC-18
+      responses:
+        '200':
+          description: Schedule publication result
+  /api/pricing:
+    get:
+      summary: View conference pricing
+      description: UC-19
+      responses:
+        '200':
+          description: Pricing result
+  /api/payments:
+    post:
+      summary: Pay registration fee
+      description: UC-20
+      responses:
+        '200':
+          description: Payment result
+  /api/tickets:
+    post:
+      summary: Receive payment confirmation and ticket
+      description: UC-21
+      responses:
+        '200':
+          description: Ticket issuance result
