@@ -6,6 +6,8 @@ const db = require('../../src/models/db');
 
 function resetDatabase() {
   const sql = [
+    'DELETE FROM reviewer_notifications;',
+    'DELETE FROM review_assignments;',
     'DELETE FROM submissions;',
     'DELETE FROM users;'
   ].join('\n');

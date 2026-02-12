@@ -87,12 +87,12 @@
 - [x] T026 [P] [US3] Add backend/src/models/submission.js for submission persistence
 - [x] T027 [P] [US3] Add backend/src/services/submission_service.js for submission workflow
 - [x] T028 [US3] Implement POST /api/submissions in backend/src/routes/submissions.js (UC-05)
-- [ ] T029 [US3] Implement POST /api/submissions/:id/draft in backend/src/routes/submissions.js (UC-06)
-- [ ] T030 [US3] Implement POST /api/submissions/validate in backend/src/routes/submissions.js (UC-07)
+- [x] T029 [US3] Implement POST /api/submissions/:id/draft in backend/src/routes/submissions.js (UC-06)
+- [x] T030 [US3] Implement POST /api/submissions/validate in backend/src/routes/submissions.js (UC-07)
 - [x] T031 [P] [US3] Add backend/tests/integration/test_submission_api.js for /api/submissions
-- [ ] T032 [P] [US3] Add backend/tests/integration/test_submission_draft_api.js for /api/submissions/:id/draft
-- [ ] T033 [P] [US3] Add backend/tests/acceptance/test_uc05_uc07_submission.js mapped to AT-UC-05-* and AT-UC-07-*
-- [ ] T034 [P] [US3] Add backend/tests/acceptance/test_uc06_draft.js mapped to AT-UC-06-*
+- [x] T032 [P] [US3] Add backend/tests/integration/test_submission_draft_api.js for /api/submissions/:id/draft
+- [x] T033 [P] [US3] Add backend/tests/acceptance/test_uc05_uc07_submission.js mapped to AT-UC-05-* and AT-UC-07-*
+- [x] T034 [P] [US3] Add backend/tests/acceptance/test_uc06_draft.js mapped to AT-UC-06-*
 
 ---
 
@@ -104,16 +104,16 @@
 
 ### Tests and Implementation
 
-- [ ] T035 [P] [US4] Add backend/src/models/review_assignment.js for reviewer assignments
-- [ ] T036 [P] [US4] Add backend/src/models/reviewer_notification.js for notification records
-- [ ] T037 [P] [US4] Add backend/src/services/reviewer_assignment_service.js for assignment and workload checks
-- [ ] T038 [P] [US4] Add backend/src/services/reviewer_notification_service.js for notification logging
-- [ ] T039 [US4] Implement POST /api/reviewer-assignments in backend/src/routes/reviewers.js (UC-08, UC-09)
-- [ ] T040 [US4] Implement POST /api/reviewers/notify in backend/src/routes/reviewers.js (UC-10)
+- [x] T035 [P] [US4] Add backend/src/models/review_assignment.js for reviewer assignments
+- [x] T036 [P] [US4] Add backend/src/models/reviewer_notification.js for notification records
+- [x] T037 [P] [US4] Add backend/src/services/reviewer_assignment_service.js for assignment and workload checks
+- [x] T038 [P] [US4] Add backend/src/services/reviewer_notification_service.js for notification logging
+- [x] T039 [US4] Implement POST /api/reviewer-assignments in backend/src/routes/reviewers.js (UC-08, UC-09)
+- [x] T040 [US4] Implement POST /api/reviewers/notify in backend/src/routes/reviewers.js (UC-10)
 - [ ] T041 [US4] Implement POST /api/reviewer-invitations/:id/response in backend/src/routes/reviewers.js (UC-11)
-- [ ] T042 [P] [US4] Add backend/tests/integration/test_reviewer_assignment_api.js
+- [x] T042 [P] [US4] Add backend/tests/integration/test_reviewer_assignment_api.js
 - [ ] T043 [P] [US4] Add backend/tests/acceptance/test_uc08_uc11_assignments.js mapped to AT-UC-08-*, AT-UC-09-*, AT-UC-11-*
-- [ ] T044 [P] [US4] Add backend/tests/acceptance/test_uc10_notify_reviewers.js mapped to AT-UC-10-*
+- [x] T044 [P] [US4] Add backend/tests/acceptance/test_uc10_notify_reviewers.js mapped to AT-UC-10-*
 
 ---
 

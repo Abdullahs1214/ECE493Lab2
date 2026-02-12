@@ -39,4 +39,21 @@ function updatePassword(userId, newPassword) {
   });
 }
 
-module.exports = { createUser, findByEmail, updatePassword };
+function findUsersByIds(ids) {
+  if (!ids || ids.length === 0) {
+    return Promise.resolve([]);
+  }
+  const placeholders = ids.map(() => '?').join(', ');
+  return new Promise((resolve, reject) => {
+    const sql = `SELECT id, email, password FROM users WHERE id IN (${placeholders})`;
+    db.all(sql, ids, (err, rows) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve(rows || []);
+    });
+  });
+}
+
+module.exports = { createUser, findByEmail, updatePassword, findUsersByIds };

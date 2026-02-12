@@ -72,6 +72,16 @@ function validateMetadata(metadata) {
     };
   }
 
+  const invalid = requiredFields.filter((field) => typeof metadata[field] !== 'string');
+  if (invalid.length > 0) {
+    return {
+      ok: false,
+      code: 'field_invalid',
+      message: 'One or more field values are invalid.',
+      details: { invalid }
+    };
+  }
+
   return { ok: true };
 }
 
