@@ -8,45 +8,45 @@
 
 ## Requirement Completeness
 
-- [ ] CHK001 Are all entities referenced in UC-01..UC-21 represented in the data model (users, submissions, reviews, decisions, schedule, pricing, payments, tickets)? [Completeness, Spec §Requirements/UC Sections]
-- [ ] CHK002 Are relationships between entities documented when implied by flows (e.g., submission-to-review, assignment-to-review)? [Completeness, Spec §UC-05/UC-08/UC-12]
-- [ ] CHK003 Are validation constraints explicitly stated in the data model only when specified in the spec (e.g., password policy, file formats/size, payment methods)? [Completeness, Spec §UC-02/UC-07/UC-20]
+- [x] CHK001 Are all entities referenced in UC-01..UC-21 represented in the data model (users, submissions, reviews, decisions, schedule, pricing, payments, tickets)? [Completeness, Spec §Requirements/UC Sections]
+- [x] CHK002 Are relationships between entities documented when implied by flows (e.g., submission-to-review, assignment-to-review)? [Completeness, Spec §UC-05/UC-08/UC-12]
+- [x] CHK003 Are validation constraints explicitly stated in the data model only when specified in the spec (e.g., password policy, file formats/size, payment methods)? [Completeness, Spec §UC-02/UC-07/UC-20]
 
 ## Requirement Clarity
 
-- [ ] CHK004 Are entity descriptions precise enough to distinguish similar concepts (review assignment vs review vs decision)? [Clarity, Spec §UC-08/UC-12/UC-14]
-- [ ] CHK005 Are any implied identifiers or uniqueness constraints (e.g., email uniqueness) explicitly tied to the UC that specifies them? [Clarity, Spec §UC-01/UC-02]
+- [x] CHK004 Are entity descriptions precise enough to distinguish similar concepts (review assignment vs review vs decision)? [Clarity, Spec §UC-08/UC-12/UC-14]
+- [x] CHK005 Are any implied identifiers or uniqueness constraints (e.g., email uniqueness) explicitly tied to the UC that specifies them? [Clarity, Spec §UC-01/UC-02]
 
 ## Requirement Consistency
 
-- [ ] CHK006 Do data model relationships align with UC flows without introducing new attributes or roles? [Consistency, Spec §UC-01..UC-21]
-- [ ] CHK007 Are validation constraints consistent between spec and data model (password policy, file formats/size, payment methods)? [Consistency, Spec §UC-02/UC-07/UC-20]
+- [x] CHK006 Do data model relationships align with UC flows without introducing new attributes or roles? [Consistency, Spec §UC-01..UC-21]
+- [x] CHK007 Are validation constraints consistent between spec and data model (password policy, file formats/size, payment methods)? [Consistency, Spec §UC-02/UC-07/UC-20]
 
 ## Acceptance Criteria Quality
 
-- [ ] CHK008 Can each entity’s presence be traced to acceptance tests or UC success conditions (e.g., stored reviews, stored payments)? [Acceptance Criteria, Spec §UC-01..UC-21]
+- [x] CHK008 Can each entity’s presence be traced to acceptance tests or UC success conditions (e.g., stored reviews, stored payments)? [Acceptance Criteria, Spec §UC-01..UC-21]
 
 ## Scenario Coverage
 
-- [ ] CHK009 Are error and failure paths that mention stored/not-stored outcomes reflected in the data model (e.g., no partial account creation)? [Coverage, Spec §UC-01 Extensions]
-- [ ] CHK010 Are state-changing flows (submission, review, decision, payment) supported by corresponding entities without adding new lifecycle states? [Coverage, Spec §UC-05/UC-12/UC-14/UC-20]
+- [x] CHK009 Are error and failure paths that mention stored/not-stored outcomes reflected in the data model (e.g., no partial account creation)? [Coverage, Spec §UC-01 Extensions]
+- [x] CHK010 Are state-changing flows (submission, review, decision, payment) supported by corresponding entities without adding new lifecycle states? [Coverage, Spec §UC-05/UC-12/UC-14/UC-20]
 
 ## Edge Case Coverage
 
-- [ ] CHK011 Are conflict scenarios (duplicate email, workload limit) represented only as constraints, not new entities? [Edge Case, Spec §UC-01/UC-09]
+- [x] CHK011 Are conflict scenarios (duplicate email, workload limit) represented only as constraints, not new entities? [Edge Case, Spec §UC-01/UC-09]
 
 ## Non-Functional Requirements
 
-- [ ] CHK012 Are data retention, lifecycle, or archival requirements explicitly stated? If not, is their omission treated as out of scope? [Optional Note]
+- [x] CHK012 Are data retention, lifecycle, or archival requirements explicitly stated? If not, is their omission treated as out of scope? [Optional Note]
 
 ## Dependencies & Assumptions
 
-- [ ] CHK013 Are external systems referenced (email system, payment gateway) captured only as dependencies without inventing storage requirements? [Assumption, Spec §UC-01/UC-10/UC-20]
+- [x] CHK013 Are external systems referenced (email system, payment gateway) captured only as dependencies without inventing storage requirements? [Assumption, Spec §UC-01/UC-10/UC-20]
 
 ## Ambiguities & Conflicts
 
-- [ ] CHK014 Are any entity fields or relationships present in the data model that are not mentioned or implied by the spec? [Conflict, Gap]
-- [ ] CHK015 Are any required data attributes implied by UCs but missing from the data model (e.g., ticket/confirmation details)? [Gap, Spec §UC-21]
+- [x] CHK014 Are any entity fields or relationships present in the data model that are not mentioned or implied by the spec? [Conflict, Gap]
+- [x] CHK015 Are any required data attributes implied by UCs but missing from the data model (e.g., ticket/confirmation details)? [Gap, Spec §UC-21]
 
 ## Notes
 

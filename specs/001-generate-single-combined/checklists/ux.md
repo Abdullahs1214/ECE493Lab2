@@ -8,50 +8,50 @@
 
 ## Requirement Completeness
 
-- [ ] CHK001 Are user-facing flow requirements defined for all 7 user stories (register, login, submit paper, assign reviewers, submit review, publish schedule, register/pay)? [Completeness, Spec §User Scenarios]
-- [ ] CHK002 Are form input requirements specified for registration, login, submission, and payment (required fields and validation rules)? [Completeness, Spec §UC-01/UC-03/UC-05/UC-07/UC-20]
-- [ ] CHK003 Are notification requirements defined for user-visible messages (registration success/failure, reviewer notifications, decision notifications, payment confirmation)? [Completeness, Spec §UC-01/UC-10/UC-15/UC-21]
+- [x] CHK001 Are user-facing flow requirements defined for all 7 user stories (register, login, submit paper, assign reviewers, submit review, publish schedule, register/pay)? [Completeness, Spec §User Scenarios]
+- [x] CHK002 Are form input requirements specified for registration, login, submission, and payment (required fields and validation rules)? [Completeness, Spec §UC-01/UC-03/UC-05/UC-07/UC-20]
+- [x] CHK003 Are notification requirements defined for user-visible messages (registration success/failure, reviewer notifications, decision notifications, payment confirmation)? [Completeness, Spec §UC-01/UC-10/UC-15/UC-21]
 
 ## Requirement Clarity
 
-- [ ] CHK004 Are error messages described with clear causes (e.g., invalid email, duplicate email, weak password) rather than vague language? [Clarity, Spec §UC-01/UC-02]
-- [ ] CHK005 Are password policy requirements explicitly defined for user feedback (length, character classes, blacklist)? [Clarity, Spec §UC-02]
-- [ ] CHK006 Are file validation requirements for submissions explicit (formats and size limits) to support clear user feedback? [Clarity, Spec §UC-07]
-- [ ] CHK007 Are payment method requirements explicitly stated so users know accepted methods? [Clarity, Spec §UC-20]
+- [x] CHK004 Are error messages described with clear causes (e.g., invalid email, duplicate email, weak password) rather than vague language? [Clarity, Spec §UC-01/UC-02]
+- [x] CHK005 Are password policy requirements explicitly defined for user feedback (length, character classes, blacklist)? [Clarity, Spec §UC-02]
+- [x] CHK006 Are file validation requirements for submissions explicit (formats and size limits) to support clear user feedback? [Clarity, Spec §UC-07]
+- [x] CHK007 Are payment method requirements explicitly stated so users know accepted methods? [Clarity, Spec §UC-20]
 
 ## Requirement Consistency
 
-- [ ] CHK008 Do validation and error messaging requirements align between registration and credential validation (UC-01 vs UC-02)? [Consistency, Spec §UC-01/UC-02]
-- [ ] CHK009 Are submission validation requirements consistent between submit and validate flows (UC-05 vs UC-07)? [Consistency, Spec §UC-05/UC-07]
+- [x] CHK008 Do validation and error messaging requirements align between registration and credential validation (UC-01 vs UC-02)? [Consistency, Spec §UC-01/UC-02]
+- [x] CHK009 Are submission validation requirements consistent between submit and validate flows (UC-05 vs UC-07)? [Consistency, Spec §UC-05/UC-07]
 
 ## Acceptance Criteria Quality
 
-- [ ] CHK010 Do user-facing acceptance scenarios specify observable outcomes for success and failure without relying on UI design assumptions? [Acceptance Criteria, Spec §User Scenarios]
+- [x] CHK010 Do user-facing acceptance scenarios specify observable outcomes for success and failure without relying on UI design assumptions? [Acceptance Criteria, Spec §User Scenarios]
 
 ## Scenario Coverage
 
-- [ ] CHK011 Are primary user flows defined for registration, login, submission, review, scheduling publication, and payment? [Coverage, Spec §User Scenarios]
-- [ ] CHK012 Are alternate/error flows defined for user-facing validation failures and system errors? [Coverage, Spec §Edge Cases]
-- [ ] CHK013 Are unauthenticated vs authenticated access expectations clear for user-facing flows that require login? [Coverage, Spec §UC-03/UC-05/UC-20]
+- [x] CHK011 Are primary user flows defined for registration, login, submission, review, scheduling publication, and payment? [Coverage, Spec §User Scenarios]
+- [x] CHK012 Are alternate/error flows defined for user-facing validation failures and system errors? [Coverage, Spec §Edge Cases]
+- [x] CHK013 Are unauthenticated vs authenticated access expectations clear for user-facing flows that require login? [Coverage, Spec §UC-03/UC-05/UC-20]
 
 ## Edge Case Coverage
 
-- [ ] CHK014 Are boundary conditions specified for file upload validation (format/size) to guide user feedback? [Edge Case, Spec §UC-07]
-- [ ] CHK015 Are conflict scenarios (duplicate email, workload limit) defined with user-visible outcomes? [Edge Case, Spec §UC-01/UC-09]
+- [x] CHK014 Are boundary conditions specified for file upload validation (format/size) to guide user feedback? [Edge Case, Spec §UC-07]
+- [x] CHK015 Are conflict scenarios (duplicate email, workload limit) defined with user-visible outcomes? [Edge Case, Spec §UC-01/UC-09]
 
 ## Non-Functional Requirements
 
-- [ ] CHK016 Are accessibility requirements for form interactions (keyboard navigation, readable error text) explicitly defined where required by documented flows? [Gap]
-- [ ] CHK017 Are any UX performance expectations for critical user flows specified, or is the omission intentional? [Optional Note, Gap]
+- [x] CHK016 Are accessibility requirements for form interactions (keyboard navigation, readable error text) explicitly defined where required by documented flows? [Gap]
+- [x] CHK017 Are any UX performance expectations for critical user flows specified, or is the omission intentional? [Optional Note, Gap]
 
 ## Dependencies & Assumptions
 
-- [ ] CHK018 Are assumptions about external communications (email notifications, payment confirmation) documented in a way that supports user-visible UX expectations? [Assumption, Spec §UC-10/UC-15/UC-21]
+- [x] CHK018 Are assumptions about external communications (email notifications, payment confirmation) documented in a way that supports user-visible UX expectations? [Assumption, Spec §UC-10/UC-15/UC-21]
 
 ## Ambiguities & Conflicts
 
-- [ ] CHK019 Are any UX terms (e.g., 'prompt', 'notify', 'display error') defined with sufficient specificity to avoid interpretation drift? [Ambiguity, Spec §UC-01..UC-21]
-- [ ] CHK020 Are optional UX considerations (e.g., information hierarchy, layout) clearly marked as out of scope unless explicitly required? [Optional Note]
+- [x] CHK019 Are any UX terms (e.g., 'prompt', 'notify', 'display error') defined with sufficient specificity to avoid interpretation drift? [Ambiguity, Spec §UC-01..UC-21]
+- [x] CHK020 Are optional UX considerations (e.g., information hierarchy, layout) clearly marked as out of scope unless explicitly required? [Optional Note]
 
 ## Notes
 

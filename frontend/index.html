@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CMS Minimal UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>CMS Minimal UI</h1>
+      <section>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" required />
+          </label>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" required />
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Submit Paper</h2>
+        <form id="submission-form">
+          <label>
+            Title
+            <input type="text" name="title" required />
+          </label>
+          <label>
+            Abstract
+            <textarea name="abstract" required></textarea>
+          </label>
+          <label>
+            Authors
+            <input type="text" name="authors" required />
+          </label>
+          <label>
+            Keywords
+            <input type="text" name="keywords" required />
+          </label>
+          <label>
+            Manuscript Filename
+            <input type="text" name="filename" required />
+          </label>
+          <label>
+            Manuscript Size (bytes)
+            <input type="number" name="sizeBytes" required />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Change Password</h2>
+        <form id="password-form">
+          <label>
+            Current Password
+            <input type="password" name="currentPassword" required />
+          </label>
+          <label>
+            New Password
+            <input type="password" name="newPassword" required />
+          </label>
+          <button type="submit">Change Password</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

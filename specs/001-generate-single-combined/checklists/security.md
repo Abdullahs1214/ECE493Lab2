@@ -8,47 +8,47 @@
 
 ## Requirement Completeness
 
-- [ ] CHK001 Are authentication requirements explicitly defined for all flows that require a logged-in user (submission, review, payment)? [Completeness, Spec §UC-03/UC-05/UC-12/UC-20]
-- [ ] CHK002 Are authorization boundaries explicitly stated where actor roles are defined (e.g., editor assigns reviewers, admin generates schedule)? [Completeness, Spec §UC-08/UC-16/UC-17]
-- [ ] CHK003 Are password policy requirements fully specified for credential handling? [Completeness, Spec §UC-02]
+- [x] CHK001 Are authentication requirements explicitly defined for all flows that require a logged-in user (submission, review, payment)? [Completeness, Spec §UC-03/UC-05/UC-12/UC-20]
+- [x] CHK002 Are authorization boundaries explicitly stated where actor roles are defined (e.g., editor assigns reviewers, admin generates schedule)? [Completeness, Spec §UC-08/UC-16/UC-17]
+- [x] CHK003 Are password policy requirements fully specified for credential handling? [Completeness, Spec §UC-02]
 
 ## Requirement Clarity
 
-- [ ] CHK004 Is the password policy expressed with concrete, testable criteria (length, character classes, blacklist)? [Clarity, Spec §UC-02]
-- [ ] CHK005 Are account lockout or retry limits explicitly stated, or is their absence documented as out of scope? [Clarity, Optional Note]
+- [x] CHK004 Is the password policy expressed with concrete, testable criteria (length, character classes, blacklist)? [Clarity, Spec §UC-02]
+- [x] CHK005 Are account lockout or retry limits explicitly stated, or is their absence documented as out of scope? [Clarity, Optional Note]
 
 ## Requirement Consistency
 
-- [ ] CHK006 Are authentication requirements consistent across all endpoints that require login (no contradictions between UC-03 and other UCs)? [Consistency, Spec §UC-03/UC-05/UC-12/UC-20]
-- [ ] CHK007 Are authorization expectations consistent between editor/admin roles where specified? [Consistency, Spec §UC-08/UC-16/UC-17]
+- [x] CHK006 Are authentication requirements consistent across all endpoints that require login (no contradictions between UC-03 and other UCs)? [Consistency, Spec §UC-03/UC-05/UC-12/UC-20]
+- [x] CHK007 Are authorization expectations consistent between editor/admin roles where specified? [Consistency, Spec §UC-08/UC-16/UC-17]
 
 ## Acceptance Criteria Quality
 
-- [ ] CHK008 Do acceptance scenarios for authentication/authorization flows specify observable outcomes for invalid credentials or unauthorized access? [Acceptance Criteria, Spec §UC-03/UC-11]
+- [x] CHK008 Do acceptance scenarios for authentication/authorization flows specify observable outcomes for invalid credentials or unauthorized access? [Acceptance Criteria, Spec §UC-03/UC-11]
 
 ## Scenario Coverage
 
-- [ ] CHK009 Are invalid credential and duplicate credential scenarios explicitly defined for registration/login? [Coverage, Spec §UC-01/UC-02/UC-03]
-- [ ] CHK010 Are system-failure scenarios that affect security-sensitive flows (e.g., DB failure on registration) defined? [Coverage, Spec §UC-01]
+- [x] CHK009 Are invalid credential and duplicate credential scenarios explicitly defined for registration/login? [Coverage, Spec §UC-01/UC-02/UC-03]
+- [x] CHK010 Are system-failure scenarios that affect security-sensitive flows (e.g., DB failure on registration) defined? [Coverage, Spec §UC-01]
 
 ## Edge Case Coverage
 
-- [ ] CHK011 Are conflict scenarios (duplicate email, workload limit) defined with clear failure outcomes? [Edge Case, Spec §UC-01/UC-09]
+- [x] CHK011 Are conflict scenarios (duplicate email, workload limit) defined with clear failure outcomes? [Edge Case, Spec §UC-01/UC-09]
 
 ## Non-Functional Requirements
 
-- [ ] CHK012 Are data protection or confidentiality requirements explicitly stated? If absent, is the omission acknowledged as out of scope? [Optional Note]
-- [ ] CHK013 Are encryption requirements (at rest/in transit) explicitly stated? If not, note as optional consideration only. [Optional Note]
+- [x] CHK012 Are data protection or confidentiality requirements explicitly stated? If absent, is the omission acknowledged as out of scope? [Optional Note]
+- [x] CHK013 Are encryption requirements (at rest/in transit) explicitly stated? If not, note as optional consideration only. [Optional Note]
 
 ## Dependencies & Assumptions
 
-- [ ] CHK014 Are external systems (email system, payment gateway) referenced with security-relevant assumptions documented at the requirement level? [Assumption, Spec §UC-01/UC-10/UC-20]
-- [ ] CHK015 Are payment security requirements limited to explicitly stated payment method constraints (card/PayPal), with other controls marked out of scope? [Assumption, Spec §UC-20]
+- [x] CHK014 Are external systems (email system, payment gateway) referenced with security-relevant assumptions documented at the requirement level? [Assumption, Spec §UC-01/UC-10/UC-20]
+- [x] CHK015 Are payment security requirements limited to explicitly stated payment method constraints (card/PayPal), with other controls marked out of scope? [Assumption, Spec §UC-20]
 
 ## Ambiguities & Conflicts
 
-- [ ] CHK016 Are any security-related terms (e.g., 'secure', 'protected') used without definition in the spec? [Ambiguity, Spec §UC-01..UC-21]
-- [ ] CHK017 Are reviewer/author confidentiality expectations explicitly stated; if not, are they treated as optional considerations only? [Optional Note, Spec §UC-12/UC-15]
+- [x] CHK016 Are any security-related terms (e.g., 'secure', 'protected') used without definition in the spec? [Ambiguity, Spec §UC-01..UC-21]
+- [x] CHK017 Are reviewer/author confidentiality expectations explicitly stated; if not, are they treated as optional considerations only? [Optional Note, Spec §UC-12/UC-15]
 
 ## Notes
 

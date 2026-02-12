@@ -4,3 +4,14 @@
 .codex/sessions/
 .codex/tmp/
 .codex/
+.DS_Store
+.env*
+.idea/
+.vscode/
+Thumbs.db
+*.log
+*.swp
+*.tmp
+node_modules/
+dist/
+build/

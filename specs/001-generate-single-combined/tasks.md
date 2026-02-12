@@ -17,12 +17,12 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan (backend/, frontend/)
-- [ ] T002 Initialize Node.js project in backend/package.json with Express and sqlite3 dependencies
-- [ ] T003 [P] Add backend/src/app.js with Express app bootstrap and JSON middleware
-- [ ] T004 [P] Add frontend/index.html, frontend/styles.css, frontend/app.js (minimal static shell)
-- [ ] T005 [P] Add backend/src/routes/index.js to register API routes
-- [ ] T006 [P] Add backend/tests/ directory structure (unit/, integration/, acceptance/)
+- [x] T001 Create project structure per implementation plan (backend/, frontend/)
+- [x] T002 Initialize Node.js project in backend/package.json with Express and sqlite3 dependencies
+- [x] T003 [P] Add backend/src/app.js with Express app bootstrap and JSON middleware
+- [x] T004 [P] Add frontend/index.html, frontend/styles.css, frontend/app.js (minimal static shell)
+- [x] T005 [P] Add backend/src/routes/index.js to register API routes
+- [x] T006 [P] Add backend/tests/ directory structure (unit/, integration/, acceptance/)
 
 ---
 
@@ -30,12 +30,12 @@
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
 
-- [ ] T007 Create backend/src/models/db.js to manage SQLite connection
-- [ ] T008 Create backend/src/models/schema.sql with tables for users, submissions, review_assignments, reviews, decisions, schedule_items, pricing, payments, tickets, reviewer_notifications
-- [ ] T009 Implement backend/src/models/migrate.js to initialize schema.sql on startup
-- [ ] T010 [P] Add backend/src/services/validation.js with shared validators (email format, password policy, file constraints)
-- [ ] T011 [P] Add backend/src/services/errors.js with standard error response helpers
-- [ ] T012 Add backend/src/middleware/auth.js for session-based authentication (logged-in vs not logged-in checks only)
+- [x] T007 Create backend/src/models/db.js to manage SQLite connection
+- [x] T008 Create backend/src/models/schema.sql with tables for users, submissions, review_assignments, reviews, decisions, schedule_items, pricing, payments, tickets, reviewer_notifications
+- [x] T009 Implement backend/src/models/migrate.js to initialize schema.sql on startup
+- [x] T010 [P] Add backend/src/services/validation.js with shared validators (email format, password policy, file constraints)
+- [x] T011 [P] Add backend/src/services/errors.js with standard error response helpers
+- [x] T012 Add backend/src/middleware/auth.js for session-based authentication (logged-in vs not logged-in checks only)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -49,12 +49,12 @@
 
 ### Tests and Implementation
 
-- [ ] T013 [P] [US1] Add backend/src/models/user.js for user persistence
-- [ ] T014 [P] [US1] Add backend/src/services/user_service.js for registration logic
-- [ ] T015 [US1] Implement POST /api/register in backend/src/routes/auth.js (UC-01, UC-02)
-- [ ] T016 [P] [US1] Add backend/tests/unit/test_password_policy.js for password validation
-- [ ] T017 [P] [US1] Add backend/tests/integration/test_register_api.js for /api/register
-- [ ] T018 [P] [US1] Add backend/tests/acceptance/test_uc01_register.js mapped to AT-UC-01-*
+- [x] T013 [P] [US1] Add backend/src/models/user.js for user persistence
+- [x] T014 [P] [US1] Add backend/src/services/user_service.js for registration logic
+- [x] T015 [US1] Implement POST /api/register in backend/src/routes/auth.js (UC-01, UC-02)
+- [x] T016 [P] [US1] Add backend/tests/unit/test_password_policy.js for password validation
+- [x] T017 [P] [US1] Add backend/tests/integration/test_register_api.js for /api/register
+- [x] T018 [P] [US1] Add backend/tests/acceptance/test_uc01_register.js mapped to AT-UC-01-*
 
 ---
 
@@ -66,13 +66,13 @@
 
 ### Tests and Implementation
 
-- [ ] T019 [P] [US2] Add backend/src/services/auth_service.js for login verification
-- [ ] T020 [US2] Implement POST /api/login in backend/src/routes/auth.js (UC-03)
-- [ ] T021 [US2] Implement POST /api/password in backend/src/routes/auth.js (UC-04)
-- [ ] T022 [P] [US2] Add backend/tests/integration/test_login_api.js for /api/login
-- [ ] T023 [P] [US2] Add backend/tests/integration/test_password_change_api.js for /api/password
-- [ ] T024 [P] [US2] Add backend/tests/acceptance/test_uc03_login.js mapped to AT-UC-03-*
-- [ ] T025 [P] [US2] Add backend/tests/acceptance/test_uc04_password_change.js mapped to AT-UC-04-*
+- [x] T019 [P] [US2] Add backend/src/services/auth_service.js for login verification
+- [x] T020 [US2] Implement POST /api/login in backend/src/routes/auth.js (UC-03)
+- [x] T021 [US2] Implement POST /api/password in backend/src/routes/auth.js (UC-04)
+- [x] T022 [P] [US2] Add backend/tests/integration/test_login_api.js for /api/login
+- [x] T023 [P] [US2] Add backend/tests/integration/test_password_change_api.js for /api/password
+- [x] T024 [P] [US2] Add backend/tests/acceptance/test_uc03_login.js mapped to AT-UC-03-*
+- [x] T025 [P] [US2] Add backend/tests/acceptance/test_uc04_password_change.js mapped to AT-UC-04-*
 
 ---
 
@@ -84,12 +84,12 @@
 
 ### Tests and Implementation
 
-- [ ] T026 [P] [US3] Add backend/src/models/submission.js for submission persistence
-- [ ] T027 [P] [US3] Add backend/src/services/submission_service.js for submission workflow
-- [ ] T028 [US3] Implement POST /api/submissions in backend/src/routes/submissions.js (UC-05)
+- [x] T026 [P] [US3] Add backend/src/models/submission.js for submission persistence
+- [x] T027 [P] [US3] Add backend/src/services/submission_service.js for submission workflow
+- [x] T028 [US3] Implement POST /api/submissions in backend/src/routes/submissions.js (UC-05)
 - [ ] T029 [US3] Implement POST /api/submissions/:id/draft in backend/src/routes/submissions.js (UC-06)
 - [ ] T030 [US3] Implement POST /api/submissions/validate in backend/src/routes/submissions.js (UC-07)
-- [ ] T031 [P] [US3] Add backend/tests/integration/test_submission_api.js for /api/submissions
+- [x] T031 [P] [US3] Add backend/tests/integration/test_submission_api.js for /api/submissions
 - [ ] T032 [P] [US3] Add backend/tests/integration/test_submission_draft_api.js for /api/submissions/:id/draft
 - [ ] T033 [P] [US3] Add backend/tests/acceptance/test_uc05_uc07_submission.js mapped to AT-UC-05-* and AT-UC-07-*
 - [ ] T034 [P] [US3] Add backend/tests/acceptance/test_uc06_draft.js mapped to AT-UC-06-*
