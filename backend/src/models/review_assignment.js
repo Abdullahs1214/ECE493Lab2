@@ -52,4 +52,42 @@ function getAssignmentsBySubmission(submissionId) {
   });
 }
 
-module.exports = { countAssignmentsForReviewer, createAssignments, getAssignmentsBySubmission };
+function findAssignmentById(assignmentId) {
+  return new Promise((resolve, reject) => {
+    db.get(
+      'SELECT id, submission_id, reviewer_id FROM review_assignments WHERE id = ?',
+      [assignmentId],
+      (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve(row || null);
+      }
+    );
+  });
+}
+
+function countAssignmentsForSubmission(submissionId) {
+  return new Promise((resolve, reject) => {
+    db.get(
+      'SELECT COUNT(*) AS count FROM review_assignments WHERE submission_id = ?',
+      [submissionId],
+      (err, row) => {
+        if (err) {
+          reject(err);
+          return;
+        }
+        resolve(row.count);
+      }
+    );
+  });
+}
+
+module.exports = {
+  countAssignmentsForReviewer,
+  createAssignments,
+  getAssignmentsBySubmission,
+  findAssignmentById,
+  countAssignmentsForSubmission
+};

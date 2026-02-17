@@ -110,9 +110,9 @@
 - [x] T038 [P] [US4] Add backend/src/services/reviewer_notification_service.js for notification logging
 - [x] T039 [US4] Implement POST /api/reviewer-assignments in backend/src/routes/reviewers.js (UC-08, UC-09)
 - [x] T040 [US4] Implement POST /api/reviewers/notify in backend/src/routes/reviewers.js (UC-10)
-- [ ] T041 [US4] Implement POST /api/reviewer-invitations/:id/response in backend/src/routes/reviewers.js (UC-11)
+- [x] T041 [US4] Implement POST /api/reviewer-invitations/:id/response in backend/src/routes/reviewers.js (UC-11)
 - [x] T042 [P] [US4] Add backend/tests/integration/test_reviewer_assignment_api.js
-- [ ] T043 [P] [US4] Add backend/tests/acceptance/test_uc08_uc11_assignments.js mapped to AT-UC-08-*, AT-UC-09-*, AT-UC-11-*
+- [x] T043 [P] [US4] Add backend/tests/acceptance/test_uc08_uc11_assignments.js mapped to AT-UC-08-*, AT-UC-09-*, AT-UC-11-*
 - [x] T044 [P] [US4] Add backend/tests/acceptance/test_uc10_notify_reviewers.js mapped to AT-UC-10-*
 
 ---
@@ -125,14 +125,14 @@
 
 ### Tests and Implementation
 
-- [ ] T045 [P] [US5] Add backend/src/models/review.js for reviews
-- [ ] T046 [P] [US5] Add backend/src/services/review_service.js for review submission
-- [ ] T047 [P] [US5] Add backend/src/services/decision_service.js for accept/reject decisions
-- [ ] T048 [US5] Implement POST /api/reviews in backend/src/routes/reviews.js (UC-12, UC-13)
-- [ ] T049 [US5] Implement POST /api/decisions in backend/src/routes/reviews.js (UC-14)
-- [ ] T050 [US5] Implement POST /api/author-notifications in backend/src/routes/notifications.js (UC-15)
-- [ ] T051 [P] [US5] Add backend/tests/integration/test_review_api.js
-- [ ] T052 [P] [US5] Add backend/tests/acceptance/test_uc12_uc15_reviews.js mapped to AT-UC-12-*, AT-UC-13-*, AT-UC-14-*, AT-UC-15-*
+- [x] T045 [P] [US5] Add backend/src/models/review.js for reviews
+- [x] T046 [P] [US5] Add backend/src/services/review_service.js for review submission
+- [x] T047 [P] [US5] Add backend/src/services/decision_service.js for accept/reject decisions
+- [x] T048 [US5] Implement POST /api/reviews in backend/src/routes/reviews.js (UC-12, UC-13)
+- [x] T049 [US5] Implement POST /api/decisions in backend/src/routes/reviews.js (UC-14)
+- [x] T050 [US5] Implement POST /api/author-notifications in backend/src/routes/notifications.js (UC-15)
+- [x] T051 [P] [US5] Add backend/tests/integration/test_review_api.js
+- [x] T052 [P] [US5] Add backend/tests/acceptance/test_uc12_uc15_reviews.js mapped to AT-UC-12-*, AT-UC-13-*, AT-UC-14-*, AT-UC-15-*
 
 ---
 
@@ -144,13 +144,13 @@
 
 ### Tests and Implementation
 
-- [ ] T053 [P] [US6] Add backend/src/models/schedule_item.js for schedule items
-- [ ] T054 [P] [US6] Add backend/src/services/schedule_service.js for generate/modify/publish
-- [ ] T055 [US6] Implement POST /api/schedule/generate in backend/src/routes/schedule.js (UC-16)
-- [ ] T056 [US6] Implement POST /api/schedule/modify in backend/src/routes/schedule.js (UC-17)
-- [ ] T057 [US6] Implement POST /api/schedule/publish in backend/src/routes/schedule.js (UC-18)
-- [ ] T058 [P] [US6] Add backend/tests/integration/test_schedule_api.js
-- [ ] T059 [P] [US6] Add backend/tests/acceptance/test_uc16_uc18_schedule.js mapped to AT-UC-16-*, AT-UC-17-*, AT-UC-18-*
+- [x] T053 [P] [US6] Add backend/src/models/schedule_item.js for schedule items
+- [x] T054 [P] [US6] Add backend/src/services/schedule_service.js for generate/modify/publish
+- [x] T055 [US6] Implement POST /api/schedule/generate in backend/src/routes/schedule.js (UC-16)
+- [x] T056 [US6] Implement POST /api/schedule/modify in backend/src/routes/schedule.js (UC-17)
+- [x] T057 [US6] Implement POST /api/schedule/publish in backend/src/routes/schedule.js (UC-18)
+- [x] T058 [P] [US6] Add backend/tests/integration/test_schedule_api.js
+- [x] T059 [P] [US6] Add backend/tests/acceptance/test_uc16_uc18_schedule.js mapped to AT-UC-16-*, AT-UC-17-*, AT-UC-18-*
 
 ---
 
@@ -162,15 +162,15 @@
 
 ### Tests and Implementation
 
-- [ ] T060 [P] [US7] Add backend/src/models/pricing.js for registration pricing
-- [ ] T061 [P] [US7] Add backend/src/models/payment.js for payment records
-- [ ] T062 [P] [US7] Add backend/src/models/ticket.js for ticket confirmations
-- [ ] T063 [P] [US7] Add backend/src/services/payment_service.js for payment processing
-- [ ] T064 [US7] Implement GET /api/pricing in backend/src/routes/pricing.js (UC-19)
-- [ ] T065 [US7] Implement POST /api/payments in backend/src/routes/payments.js (UC-20)
-- [ ] T066 [US7] Implement POST /api/tickets in backend/src/routes/tickets.js (UC-21)
-- [ ] T067 [P] [US7] Add backend/tests/integration/test_payment_api.js
-- [ ] T068 [P] [US7] Add backend/tests/acceptance/test_uc19_uc21_payments.js mapped to AT-UC-19-*, AT-UC-20-*, AT-UC-21-*
+- [x] T060 [P] [US7] Add backend/src/models/pricing.js for registration pricing
+- [x] T061 [P] [US7] Add backend/src/models/payment.js for payment records
+- [x] T062 [P] [US7] Add backend/src/models/ticket.js for ticket confirmations
+- [x] T063 [P] [US7] Add backend/src/services/payment_service.js for payment processing
+- [x] T064 [US7] Implement GET /api/pricing in backend/src/routes/pricing.js (UC-19)
+- [x] T065 [US7] Implement POST /api/payments in backend/src/routes/payments.js (UC-20)
+- [x] T066 [US7] Implement POST /api/tickets in backend/src/routes/tickets.js (UC-21)
+- [x] T067 [P] [US7] Add backend/tests/integration/test_payment_api.js
+- [x] T068 [P] [US7] Add backend/tests/acceptance/test_uc19_uc21_payments.js mapped to AT-UC-19-*, AT-UC-20-*, AT-UC-21-*
 
 ---
 

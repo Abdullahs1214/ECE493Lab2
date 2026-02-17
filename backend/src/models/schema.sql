@@ -26,6 +26,13 @@ CREATE TABLE IF NOT EXISTS review_assignments (
   FOREIGN KEY (reviewer_id) REFERENCES users(id)
 );
 
+CREATE TABLE IF NOT EXISTS invitation_responses (
+  id INTEGER PRIMARY KEY,
+  review_assignment_id INTEGER NOT NULL,
+  response TEXT NOT NULL,
+  FOREIGN KEY (review_assignment_id) REFERENCES review_assignments(id)
+);
+
 CREATE TABLE IF NOT EXISTS reviewer_notifications (
   id INTEGER PRIMARY KEY,
   submission_id INTEGER NOT NULL,
@@ -46,6 +53,15 @@ CREATE TABLE IF NOT EXISTS decisions (
   submission_id INTEGER NOT NULL,
   decision_outcome TEXT NOT NULL,
   FOREIGN KEY (submission_id) REFERENCES submissions(id)
+);
+
+CREATE TABLE IF NOT EXISTS author_notifications (
+  id INTEGER PRIMARY KEY,
+  submission_id INTEGER NOT NULL,
+  author_id INTEGER NOT NULL,
+  outcome TEXT NOT NULL,
+  FOREIGN KEY (submission_id) REFERENCES submissions(id),
+  FOREIGN KEY (author_id) REFERENCES users(id)
 );
 
 CREATE TABLE IF NOT EXISTS schedule_items (
