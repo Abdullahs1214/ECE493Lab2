@@ -9,7 +9,15 @@
   <body>
     <main class="container">
       <h1>CMS Minimal UI</h1>
-      <section>
+      <nav class="quick-links">
+        <a href="#register">UC-01 Register</a>
+        <a href="#login">UC-03 Login</a>
+        <a href="#submit">UC-05 Submit</a>
+        <a href="#pricing">UC-19 Pricing</a>
+        <a href="#payment">UC-20 Payment</a>
+      </nav>
+
+      <section id="register">
         <h2>Register</h2>
         <form id="register-form">
           <label>
@@ -24,7 +32,7 @@
         </form>
       </section>
 
-      <section>
+      <section id="login">
         <h2>Login</h2>
         <form id="login-form">
           <label>
@@ -39,7 +47,7 @@
         </form>
       </section>
 
-      <section>
+      <section id="submit">
         <h2>Submit Paper</h2>
         <form id="submission-form">
           <label>
@@ -70,6 +78,26 @@
         </form>
       </section>
 
+      <section id="pricing">
+        <h2>View Pricing</h2>
+        <button id="pricing-button" type="button">Load Pricing</button>
+      </section>
+
+      <section id="payment">
+        <h2>Pay Registration</h2>
+        <form id="payment-form">
+          <label>
+            Card Last 4
+            <input type="text" name="cardLast4" required />
+          </label>
+          <label>
+            Billing Name
+            <input type="text" name="billingName" required />
+          </label>
+          <button type="submit">Pay</button>
+        </form>
+      </section>
+
       <section>
         <h2>Change Password</h2>
         <form id="password-form">
@@ -83,6 +111,11 @@
           </label>
           <button type="submit">Change Password</button>
         </form>
+      </section>
+
+      <section>
+        <h2>Response</h2>
+        <pre id="output" class="output">Ready.</pre>
       </section>
     </main>
     <script src="app.js"></script>

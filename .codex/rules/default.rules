@@ -1,5 +1,0 @@
-prefix_rule(pattern=[".specify/scripts/bash/check-prerequisites.sh", "--json", "--paths-only"], decision="allow")
-prefix_rule(pattern=["file", "specify"], decision="allow")
-prefix_rule(pattern=["git", "fetch", "--all", "--prune"], decision="allow")
-prefix_rule(pattern=["git", "ls-remote", "--heads", "origin"], decision="allow")
-prefix_rule(pattern=[".specify/scripts/bash/create-new-feature.sh", "--json", "Generate a single combined CMS specification from all use cases in Use Cases_Scenarios_ATs.md and all user stories in cms_user_stories.md. Treat each use case as a “feature” within the document: include a clearly labeled section per UC (UC-01 … UC-21) with requirements, validations, permissions, and failure handling. Do not invent requirements. Ensure traceability: each UC section references the corresponding user story IDs and acceptance tests.", "--number", "1", "--short-name", "combine-cms-spec"], decision="allow")

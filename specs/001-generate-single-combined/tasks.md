@@ -176,11 +176,11 @@
 
 ## Final Phase: Polish & Cross-Cutting Concerns
 
-- [ ] T069 Add backend/src/middleware/error_handler.js for consistent error responses
-- [ ] T070 [P] Add backend/tests/integration/test_error_handling.js for common failure paths
-- [ ] T071 [P] Add frontend/app.js wiring for minimal forms (register, login, submit paper, payment)
-- [ ] T072 Update frontend/index.html with links/forms for UC-01, UC-03, UC-05, UC-19
-- [ ] T073 Update frontend/styles.css for basic layout and readability
+- [x] T069 Add backend/src/middleware/error_handler.js for consistent error responses
+- [x] T070 [P] Add backend/tests/integration/test_error_handling.js for common failure paths
+- [x] T071 [P] Add frontend/app.js wiring for minimal forms (register, login, submit paper, payment)
+- [x] T072 Update frontend/index.html with links/forms for UC-01, UC-03, UC-05, UC-19
+- [x] T073 Update frontend/styles.css for basic layout and readability
 
 ## Dependencies
 

@@ -1,4 +1,4 @@
-const { test, before, afterEach } = require('node:test');
+const { test, before, beforeEach, afterEach } = require('node:test');
 const assert = require('node:assert/strict');
 const request = require('supertest');
 const { app, migratePromise, resetDatabase } = require('../helpers/test_app');
@@ -7,7 +7,16 @@ before(async () => {
   await migratePromise;
 });
 
+beforeEach(() => {
+  process.env.SIMULATE_AUTH_FAILURE = 'false';
+  process.env.SIMULATE_REVIEW_PERIOD_CLOSED = 'false';
+  process.env.SIMULATE_REVIEW_VALIDATION_FAILURE = 'false';
+  process.env.SIMULATE_EDITOR_ACCESS_FAILURE = 'false';
+  process.env.SIMULATE_DB_FAILURE = 'false';
+});
+
 afterEach(async () => {
+  process.env.SIMULATE_AUTH_FAILURE = 'false';
   process.env.SIMULATE_REVIEW_PERIOD_CLOSED = 'false';
   process.env.SIMULATE_REVIEW_VALIDATION_FAILURE = 'false';
   process.env.SIMULATE_EDITOR_ACCESS_FAILURE = 'false';
@@ -21,7 +30,9 @@ async function register(email) {
 
 async function loginAgent(email) {
   const agent = request.agent(app);
-  await agent.post('/api/login').send({ email, password: 'Strong!23' });
+  const loginResponse = await agent.post('/api/login').send({ email, password: 'Strong!23' });
+  assert.equal(loginResponse.statusCode, 200);
+  assert.equal(loginResponse.body.success, true);
   return agent;
 }
 

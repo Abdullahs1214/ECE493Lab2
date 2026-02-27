@@ -8,6 +8,7 @@ const COMMON_PASSWORDS = new Set([
   'iloveyou',
   'abc123',
   'password1',
+  'password1!',
   'changeme'
 ]);
 

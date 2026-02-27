@@ -1,36 +1,96 @@
+:root {
+  --bg: #f2f5f9;
+  --panel: #ffffff;
+  --panel-border: #d8e0ea;
+  --text: #132033;
+  --muted: #4f6077;
+  --accent: #0059b3;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #222;
+  background: linear-gradient(180deg, #eef3f9 0%, #f8fafc 100%);
+  color: var(--text);
 }
 
 .container {
-  max-width: 720px;
-  margin: 32px auto;
-  padding: 24px;
-  background: #fff;
-  border: 1px solid #ddd;
+  max-width: 860px;
+  margin: 28px auto;
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.quick-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 section {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+  border-top: 1px solid #edf2f8;
+  padding-top: 14px;
+}
+
+h1 {
+  margin: 0 0 10px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
 }
 
 label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  color: var(--muted);
 }
 
 input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
+textarea,
+button {
   box-sizing: border-box;
+  width: 100%;
+  margin-top: 4px;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #c8d3e2;
+  font: inherit;
+}
+
+textarea {
+  min-height: 70px;
+  resize: vertical;
 }
 
 button {
-  padding: 8px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #004892;
+}
+
+.output {
+  background: #0d1828;
+  color: #d7e8ff;
+  padding: 12px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
 }

@@ -1,20 +1,19 @@
-.codex/history.jsonl
+# Secrets / tooling metadata
+.codex/auth.json
 .codex/log/
+.codex/history.jsonl
 .codex/models_cache.json
-.codex/sessions/
-.codex/tmp/
-.codex/
-.DS_Store
-.env*
-.idea/
-.vscode/
-Thumbs.db
-*.log
-*.swp
-*.tmp
-node_modules/
-dist/
-build/
+.codex/version.json
 
+# If you want to exclude ALL codex artifacts:
+# .codex/
+
+# Node
+**/node_modules/
+
+# Test output / coverage
+**/coverage/
+
+# OS junk
+.DS_Store
 .codex/
-cookies.txt
